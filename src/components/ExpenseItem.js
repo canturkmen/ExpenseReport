@@ -1,12 +1,15 @@
 import React from "react";
 
 function ExpenseItem() {
-    return (
-        <div>
-            <h2>Lets get started</h2>
-            <p>This is also visible</p>
-        </div>
-    );
-}; 
+  return (
+    <div>
+      <div>Date</div>
+      <div>
+        <h2>Title</h2>
+        <div>Amount</div>
+      </div>
+    </div>
+  );
+}
 
 export default ExpenseItem;
