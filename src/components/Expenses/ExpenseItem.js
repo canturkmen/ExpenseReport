@@ -5,6 +5,15 @@ import ExpenseDate from "./ExpenseDate";
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
+
+  // The region where you have your custom functions and states.
+
+  function clickHandler(event) {
+    console.log("Clicke Event Happened.")
+  }
+
+  // JSX Region
+
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date}/>
@@ -12,6 +21,7 @@ const ExpenseItem = (props) => {
         <h2>{props.title}</h2>
         <div className="expense-item__price">{props.amount}</div>
       </div>
+      <button onClick={clickHandler}>Change Title</button> 
     </Card>
   );
 }
