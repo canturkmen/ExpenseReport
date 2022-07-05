@@ -32,7 +32,7 @@ const App = () => {
   const addExpenseHandler = (expenseData) => {
     console.log(expenseData);
     setExpenses((prevExpenses) => {
-      return [...prevExpenses, expenseData];
+      return [expenseData, ...prevExpenses];
     });
   };
 
